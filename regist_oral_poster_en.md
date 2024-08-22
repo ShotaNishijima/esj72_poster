@@ -21,8 +21,8 @@ Regular presentations include oral and poster sessions.
 - All posters will be posted online (ONLINE CONF) and posters may be displayed on-site if desired.
 - We will allocate a core time during the conference for on-site poster presentations.
 - Although there will be no core time for online poster presentations, there will be a viewing period for all online posters before the conference starts (scheduled from March 12 to 14).
-- Student members without a Ph.D. who have not previously received a poster award are eligible to apply for the [poster award](#poster-award).
-- Please note that the method for presenting online posters has been updated since the last conference, so be sure to review the details in the [poster presentation guidelines](#poster-presentation-guidelines).
+- Student members without a Ph.D. who have not previously received a poster award are eligible to apply for the [Poster Award](#poster-award).
+- Please note that the method for presenting online posters has been updated since the last conference, so be sure to review the details in the [Poster Presentation Guidelines](#poster-presentation-guidelines).
 
 ## Application for Regular Presentations
 
@@ -132,10 +132,9 @@ The selection process will emphasize the ability to convey information and the q
 - Selection will be made based on the number of "Likes!" recieved on their comments from each conference participant.
 - This award was created specifically to encourage communication among participants using the comment function.
 
-
-## Poster Presentation Guidelines <!-- Please move this section to another webpage -->
-
-# Guidelines for Online Poster Presentations
+<!-- Please move the following section to another webpage -->
+## Poster Presentation Guidelines 
+### Guidelines for Online Poster Presentations
 
 - Since it will be difficult for on-site participants to view online posters during the conference, a viewing period for all participants will be provided before the conference (scheduled for March 12-14). Therefore, all poster presenters must upload their posters to ONLINE CONF by the specified deadline (scheduled for March 11 at 23:59). Note that you may revise or replace your poster after uploading it.
 - Poster uploads are expected to become available after January 31, 2025. 
@@ -146,9 +145,8 @@ The selection process will emphasize the ability to convey information and the q
 - Our conference places a strong emphasis on international exchange. We welcome considerations for audiences who may not understand Japanese. Specifically, consider providing key points in both Japanese and English on the poster or preparing a separate English version of the poster. If you opt for "bilingual," include explanations in English on the poster or prepare an English version of the poster. When preparing a separete English version of the poster, we recommend providing two sets of A0-sized posters (one in Japanese and one in English). If opting for "English" only, please prepare your poster in English.
 - Supplementary materials (such as additional figures, data, or documents) can also be included to enhance the audience's understanding. These materials should be stored in the same PDF file as the poster, following the main poster content on separate pages, and uploaded as a single PDF file (the total file size, including the English version or supplementary materials, must not exceed 5MB).
 
-# Guidelines for On-site Poster Presentations
+### Guidelines for On-site Poster Presentations
 
 - The size of the boards used for on-site poster displays is 210 cm (height) × 90 cm (width), allowing for A0-sized vertical posters. Presenters are free to use this space as needed. However, please ensure that the poster does not extend beyond this space and interfere with neighboring boards.
-
 - Core times will be scheduled during the conference period for each poster presentation. During these core times, please be present at your poster to explain it to participants.
 
