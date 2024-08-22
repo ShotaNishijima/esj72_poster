@@ -93,7 +93,7 @@ To encourage early-career researchers in their acadamic activities, poster award
 ### Eligibility
 
 - Student members who have not obtained a Ph.D. as of the deadline for general presentations are eligible to apply.
-- However, those who have received the “Best Award” or “Excellence Award” for the Poster Prize at any past Annual Meeting of the Ecological Society of Japan are not eligible to apply, even if they meet the above requirements. Past Annual Meetings of Ecological Society of Japan include those co-hosted with with EAFES.
+- However, those who have received the “Best Award” or “Excellence Award” for the Poster Prize at any past Annual Meeting of the Ecological Society of Japan are not eligible to apply, even if they meet the above requirements. Past Annual Meetings of Ecological Society of Japan include those run jointly with EAFES.
 - Speakers who requested “TODO: Publicly solicited session theme” as their presentation field are also not eligible to apply for the Poster Award.
 - To reduce the burden on applicants, the poster award application does not require the submission of a graphical abstract or explanatory video for this conference. While the content of graphical abstracts and videos will generally not be subject to evaluation, judges may refer to them to better understand the research.
 
@@ -133,7 +133,7 @@ The selection process will emphasize the ability to convey information and the q
 - This award was created specifically to encourage communication among participants using the comment function.
 
 
-## Poster Presentation Guidelines <!-- Please move this section to another page -->
+## Poster Presentation Guidelines <!-- Please move this section to another webpage -->
 
 # Guidelines for Online Poster Presentations
 
