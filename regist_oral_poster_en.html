@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>regist_oral_poster_en.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="regular-presentations">Regular Presentations</h1>
+<p>Regular presentations include oral and poster sessions.</p>
+<h3 id="oral-session">Oral session</h3>
+<ul>
+<li>The total presentation time is 15 minutes: 12 minutes for presentation and 3 minutes for Q&amp;A.</li>
+<li>Presentations are onsite only. Online presentations are not available and will not be available on demand.</li>
+<li>Oral sessions consist of sessions in both Japanese and English. The sessions in English include presentations entered for the English Presentation Award. Oral presentations can be given in English during Japanese oral sessions.</li>
+<li>Student members or general members within 5 years of receiving their degrees may be eligible to be considered for the <a href="#english-oral-presentation-award">English Oral Presentation Award</a> if they make an oral presentation in the English session.</li>
+</ul>
+<h3 id="poster-session">Poster session</h3>
+<ul>
+<li>All posters will be posted online (ONLINE CONF) and posters may be displayed on-site if desired.</li>
+<li>We will allocate a core time during the conference for on-site poster presentations.</li>
+<li>Although there will be no core time for online poster presentations, there will be a viewing period for all online posters before the conference starts (scheduled from March 12 to 14).</li>
+<li>Student members without a Ph.D. who have not previously received a poster award at any past Annual Meeting of the Ecological Society of Japan are eligible to apply for the <a href="#poster-award">Poster Award</a>.</li>
+<li>Please note that the method for presenting online posters has been updated since the last conference, so be sure to review the details in the <a href="#guidelines-for-online-poster-presentations">Guidelines for Online Poster Presentations</a>.</li>
+</ul>
+<h2 id="application-for-regular-presentations">Application for Regular Presentations</h2>
+<h3 id="application-process">Application Process</h3>
+<ul>
+<li>Please enter your preferred presentation format (oral or poster) at the time of application, but we may not be able to meet your request depending on the number of presentations.</li>
+<li>Speakers of general lectures (main presenter, the same below) must be members of the Ecological Society of Japan. However, non-members are also eligible to have their names listed as co-researchers (see [Qualifications of Speakers by Membership Category](regist_information_en/# Qualifications of Speakers by Membership Category).
+<ul>
+<li>Non-members who wish to present a lecture should complete the admission procedure to the Society by Tuesday, October 31, 2024, referring to [Procedures for New Membership to the Ecological Society of Japan](regist_information_en#Procedures for New Membership to the Ecological Society of Japan).</li>
+</ul>
+</li>
+<li>Please note the [duplicate restriction](regist_information_en/#Duplicate restriction). A speaker of a general session cannot be a speaker of another general session or a symposium organizer or speaker.
+<ul>
+<li>Duplication with a free meeting is allowed.</li>
+<li>Explanations of purpose, comments, and statements of opinions at symposiums that do not involve abstract submission do not count as presentations and are therefore not subject to the duplication limitation.</li>
+</ul>
+</li>
+<li>For the sake of interaction with participants who do not understand Japanese, such as invitees from overseas and international students, it is recommended that some presentations be given in English even if they are given in Japanese.</li>
+</ul>
+<h3 id="how-to-apply">How to apply</h3>
+<p>You can apply for various types of presentations at the following page.</p>
+<p>**[Go to [URL of each presentation]](URL of each presentation) **</p>
+<ul>
+<li>Speakers are requested to submit their applications by October 31, 2024.</li>
+<li>The following information is required to apply for a presentation. Please note that this information cannot be changed after the deadline.
+<ul>
+<li>Title of your presentation (in both Japanese and English, within 40 Japanese characters/ 150 English characters)</li>
+<li>Names and affiliations of speakers and co-presenters (both in Japanese and English)</li>
+</ul>
+</li>
+<li>Please select your field of interest when applying for a presentation (see table below). A list of possible fields will be shown on the General Lecture Application form, so please select up to your third choice. Please note that fields may be consolidated or eliminated depending on the number of applications.</li>
+<li>Please register your abstract (maximum 800 characters for Japanese, 400 words for English) from the conference application site by February 21, 2025.</li>
+<li>Please also check [Other Notes](regist_infromation_en#Other Notes) before submitting your abstract.</li>
+</ul>
+<table border rules="none"> <colgroup> <col style="width: 25%" /> <col style="width: 25%" /> <col style="width: 25%" /> <col style="width: 25%" /> </colgroup> <tbody> <tr> <td colspan=2>Test session name (open session)</td> <td>Behavior</td> <td>Plant physiology and ecology</td> </tr> <tr> <td>Biodiversity</td> <td>Evolution</td> <td>Animal populations</td> <td>Plant populations</td> </tr> <tr> <td>Introduced species</td> <td>Mathematics</td> <td>Animal life history</td> <td>Plant life history</td> </tr> <tr> <td>Conservation</td>
+<td>Landscape</td>
+<td>Animal reproduction</td>
+<td>Plant reproduction</td>
+</tr>
+<tr>
+<td>Ecosystem management</td>
+<td>Succession and renewal</td>
+<td>Animal communities</td>
+<td>Communities</td>
+</tr>
+<tr>
+<td>Ecology education and dissemination</td>
+<td>Material cycles</td>
+<td>Interrelationships between animals and plants</td>
+<td>Fungi and microorganisms</td>
+</tr>
+</tbody>
+</table>
+<h2 id="english-oral-presentation-award">English Oral Presentation Award</h2>
+<p>The English Oral Presentation Award (EPA) is designed to promote research presentations in English at the conference and to create more opportunities for discussion with international students and international participants. At the same time, we hope to increase opportunities to improve communication skills and international information dissemination, especially for early career researchers.</p>
+<p>This award is not a competition for fluency in English or other language skills. Applicants are invited to compete on the basis of the academic content of their presentations as well as their presentation skills and attitude, and the prize will be awarded to those whose presentations are judged to be outstanding by a panel of judges.</p>
+<h3 id="eligibility">Eligibility</h3>
+<ul>
+<li>Applicants must be students (undergraduate, master's, doctoral) or members of the Ecological Society of Japan within 5 years of receiving their degree by March 2025 (childcare/nursing care leave is not included in this 5-year period).</li>
+<li>Past winners of the EPA Grand Prize are not eligible to apply, but past winners of the Excellence Award are eligible to apply. Please note that these eligibility requirements may change after the next competition, ESJ72.</li>
+</ul>
+<h3 id="judging-criteria">Judging Criteria</h3>
+<ul>
+<li>The judging will be conducted by a panel of judges who will evaluate the entries on a point-by-point basis. Applications for presentations and awards must be submitted through the conference application website.</li>
+</ul>
+<h2 id="poster-award">Poster Award</h2>
+<p>To encourage early-career researchers in their acadamic activities, poster awards will be given for outstanding poster presentations. Due to the availability of judges, the maximum number of poster award applications will be set at 500. There is no upper limit on the number of general poster presentations, which will not be subject to award consideration.</p>
+<h3 id="eligibility">Eligibility</h3>
+<ul>
+<li>Student members who have not obtained a Ph.D. as of the deadline for general presentations are eligible to apply.</li>
+<li>However, those who have received the “Best Award” or “Excellence Award” for the Poster Prize at any past Annual Meeting of the Ecological Society of Japan are not eligible to apply, even if they meet the above requirements. Past Annual Meetings of Ecological Society of Japan include those run jointly with EAFES.</li>
+<li>Speakers who requested “TODO: Publicly solicited session theme” as their presentation field are also not eligible to apply for the Poster Award.</li>
+<li>To reduce the burden on applicants, the poster award application does not require the submission of a graphical abstract or explanatory video for this conference. While the content of graphical abstracts and videos will generally not be subject to evaluation, judges may refer to them to better understand the research.</li>
+</ul>
+<h3 id="judging-criteria">Judging Criteria</h3>
+<p>The selection process will emphasize the ability to convey information and the quality of research. Poster award applicants are requested to take these points into consideration when preparing their posters.</p>
+<ul>
+<li>For the ability of posters to convey information, the judge will assess whether the research content is presented in an easy-to-understand manner.
+This includes considerations such as  (1) a good title, (2) a clear abstract, (3) engaging visual elements, and (4) effective design that allows for understanding the general content quickly. It is important that the text and figures are easy to read, that there is not too much information, and that the key points can be understood without additional explanation. To ensure fairness, please avoid changing the title of your poster after it has been registered.</li>
+<li>The quality of the research will also be evaluated based on the following criteria: (1) novelty and originality, (2) quality and quantity of data, (3) appropriateness of analysis methods, and (4) validity of the discussion and conclusions.</li>
+</ul>
+<h3 id="precautions">Precautions</h3>
+<ul>
+<li>In order to secure judges, the number of poster award applications will be capped at 500. Applications will be accepted on a first-come, first-served basis, and if the limit is reached, the poster will be presented as a general poster or oral presentation.</li>
+<li>Poster awards will be judged based on online posters to ensure fairness. The judging will take place before the conference begins, so please make sure to upload your poster to ONLINE CONF by the specified deadline (scheduled for March 11 at 23:59).</li>
+<li>In line with the concept that &quot;a poster presentation is a way to concisely summarize research content within a limited space,&quot; the poster format should be one A0-sized sheet. The orientation can be either vertical or horizontal, depending on your preference, such as choosing vertical orientation to match on-site presentations or horizontal orientation to fit computer screens.</li>
+<li>For the online poster presentations, you may upload a graphical abstract, the main poster, supplementary materials (PDF), and an explanatory video. However, only the main poster will be evaluated.  Even if you also displayed the poster on-site, only the online poster will be considered for the award.</li>
+<li>This conference will not have a core time or video discussion spaces for online posters, so please focus on creating a clear and understandable poster. For items that are difficult to evaluate by viewing the poster alone, judges may use text chat to ask the presenter questions and use the responses for evaluation.</li>
+<li>During the judging, only the content of the poster will be assessed regardless of the language used. However, in cases where posters have the same score, those that can be understood in English will be given a higher ranking. Posters that can be understood in English include those with English translations of the title, introduction, and conclusion; those where the research summary can be understood by reading only the English text; or those with a separate English version of the poster available.</li>
+</ul>
+<h2 id="awards-for-online-poster-presentations">Awards for Online Poster Presentations</h2>
+<ul>
+<li>In addition to the traditional poster awards, the conference will feature two awards: the &quot;Like!&quot; Award and the &quot;Best Discusser&quot; Award. Both awards will be selected by all conference participants.</li>
+<li>These awards are not official awards of the Ecological Society of Japan, but are given independently by the ESJ72.</li>
+<li>The winners of these awards will be announced at ONLINE CONF and on the conference website as soon as they are determined.</li>
+</ul>
+<h3 id="%22like%22-award">&quot;Like!&quot; Award</h3>
+<ul>
+<li>To encourage communication among participants through the comment function, we are introducing a &quot;Like!&quot; Award in addition to the regular poster awards. All posters will be considered for the &quot;Like!&quot; Award.</li>
+<li>Selection will be based on the number of votes and &quot;likes&quot; received for the poster presentations. All conference participants, including high school students, are eligible to vote.</li>
+<li>In the selection process for this award, posters that receive more viewers will have an advantage. Due to the nature of the viewing system, the smaller numbered posters may have a higher chance of winning.</li>
+</ul>
+<h3 id="best-discusser-award">Best Discusser Award</h3>
+<ul>
+<li>An award will be presented to an individual conference participant who has contributed to the excitement of all poster presentations, including high school student posters, by posting quality comments.</li>
+<li>Selection will be made based on the total number of &quot;Likes!&quot; recieved on their comments from each conference participant.</li>
+<li>This award was created specifically to encourage communication among participants using the comment function.</li>
+</ul>
+<!-- Please move the following section to another webpage -->
+<h2 id="poster-presentation-guidelines">Poster Presentation Guidelines</h2>
+<h3 id="guidelines-for-online-poster-presentations">Guidelines for Online Poster Presentations</h3>
+<ul>
+<li>Since it will be difficult for on-site participants to view online posters during the conference, a viewing period for all participants will be provided before the conference (scheduled for March 12-14). Therefore, all poster presenters must upload their posters to ONLINE CONF by the specified deadline (scheduled for March 11 at 23:59). Note that you may revise or replace your poster after uploading it. Poster uploads are expected to become available after January 31.</li>
+<li>For similar reasons, there will be no core time or video discussion spaces for online posters at this conference. If you wish to provide direct explanations online, please use online meeting systems such as Zoom on your own. The text chat function on ONLINE CONF is available, so please make use of it.</li>
+<li>For online poster presentations, you may upload a graphical abstract, the main poster, supplementary materials (PDF), and an explanatory video. Uploading supplementary materials, graphical abstracts, and explanatory videos is not mandatory.</li>
+<li>In line with the concept that &quot;a poster presentation is a way to concisely summarize research content within a limited space,&quot; the poster format should be one A0-sized sheet. The orientation can be either portrait or landscape, depending on your preference, such as choosing portrait orientation to match on-site presentations or landscape orientation to fit computer screens.</li>
+<li>The main poster should be created in PDF format (without embedded audio or video). The maximum file size is 5MB. Please ensure that your file does not exceed this limit. To facilitate quicker loading on the platform, it is recommended to keep the file size below 1MB and the size per page below 500KB.</li>
+<li>Our conference places a strong emphasis on international exchange. We welcome considerations for audiences who may not understand Japanese. Specifically, consider providing key points in both Japanese and English on the poster or preparing a separate English version of the poster. If you opt for &quot;bilingual,&quot; include explanations in English on the poster or prepare an English version of the poster. When preparing a separete English version of the poster, we recommend providing two sets of A0-sized posters (one in Japanese and one in English). If opting for &quot;English&quot; only, please prepare your poster in English.</li>
+<li>Supplementary materials (such as additional figures, data, or documents) can also be included to enhance the audience's understanding. These materials should be stored in the same PDF file as the poster, following the main poster content on separate pages, and uploaded as a single PDF file (the total file size, including the English version or supplementary materials, must not exceed 5MB).</li>
+<li>The graphical abstract will be used as the thumbnail image in the poster list and as the first poster image displayed on the platform. Please create it as a JPG image with dimensions of 1200 pixels by 1200 pixels. It does not necessarily need to be an image that summarizes the research content; for example, a photo of the organism being studied is also acceptable. What is important is that it serves as an eye-catching element. If a graphical abstract is not uploaded, the first page of the poster itself will be displayed in the poster list.</li>
+</ul>
+<h3 id="guidelines-for-on-site-poster-presentations">Guidelines for On-site Poster Presentations</h3>
+<ul>
+<li>The size of the boards used for on-site poster displays is 210 cm (height) × 90 cm (width), allowing for A0-sized vertical posters. Presenters are free to use this space as needed. However, please ensure that the poster does not extend beyond this space and interfere with neighboring boards.</li>
+<li>Core times will be scheduled during the conference period for each poster presentation. During these core times, please be present at your poster to explain it to participants.</li>
+</ul>
+
+</body>
+</html>
