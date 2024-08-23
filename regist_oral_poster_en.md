@@ -21,7 +21,7 @@ Regular presentations include oral and poster sessions.
 - All posters will be posted online (ONLINE CONF) and posters may be displayed on-site if desired.
 - We will allocate a core time during the conference for on-site poster presentations.
 - Although there will be no core time for online poster presentations, there will be a viewing period for all online posters before the conference starts (scheduled from March 12 to 14).
-- Student members without a Ph.D. who have not previously received a poster award are eligible to apply for the [poster award](#poster-award).
+- Student members without a Ph.D. who have not previously received a poster award at any past Annual Meeting of the Ecological Society of Japan are eligible to apply for the [poster award](#poster-award).
 - Please note that the method for presenting online posters has been updated since the last conference, so be sure to review the details in the [poster presentation guidelines](#poster-presentation-guidelines).
 
 ## Application for Regular Presentations
@@ -123,7 +123,7 @@ The selection process will emphasize the ability to convey information and the q
 ### "Like!" Award
 
 - To encourage communication among participants through the comment function, we are introducing a new "Like!" Award in addition to the regular poster awards. All poeters will be considered for the "Like!" Award. 
-- Selection will be based on the number of votes received for the poster presentations. All conference participants, including high school students, are eligible to vote.
+- Selection will be based on the number of votes and "likes" received for the poster presentations. All conference participants, including high school students, are eligible to vote.
 - In the selection process for this award, posters that receive more viewers will have an advantage. Due to the nature of the viewing system, the smaller numbered posters may have a higher chance of winning.
 
 ### Best Discusser Award
