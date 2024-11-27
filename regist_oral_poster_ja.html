@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>regist_oral_poster_ja.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<!--ポスター部会、発表編成部会および英語部会、各担当者様
+
+こんにちは。ESJ72運営部会長の橋本洸哉です。今回は、みなさまに大会公式Webサイトの原稿のご作成をご依頼したくメールしました。
+
+先日、運営部会ではESJ72のWebサイト（https://esj-meeting.net/home_ja/）を公開し、公募セッション・ERシンポジウムの募集を掲載しています。現在は、参加申し込みを開始する9月後半に合わせて大幅なWebサイトの更新を計画しており、大会案内（会場情報等）と各種講演（集会・一般講演・高ポス）の申込み情報の掲載に向けて準備を進めています。
+
+皆様には、ESJ72のWebサイト上で掲載する「一般講演」のページにおいて、以下の点について記述内容の作成・確認・更新をお願いいたします。
+    発表編成部会：口頭発表に関連する内容
+    ポスター部会：ポスター発表、ポスター賞に関連する内容
+    英語部会：英語口頭発表賞に関連する内容
+
+去年の原稿を基にした構成原案をお送りします。原稿を確認・修正の上、締め切りまでにWeb掲載依頼チャンネルにてお送りください。公開は9月下旬を予定しています。
+
+・markdown形式の細かい書き方は、説明ページ（https://github.com/hmito/esj72web/blob/main/docs/esj_web_markdown.md）をご覧ください。
+・原稿の情報は昨年度のものを下に、一部新しい情報を入れて再構成したものです。
+・Webサイト更新は、9月下旬の次は応募締切後の12月を予定しています。
+・英語版の確認・更新もお願いいたします。
+・応募に際して必要な情報は、今回の原稿で全てご記載ください。
+・構成原案はあくまで参考ですので、適宜情報が伝わりやすいよう編集をお願いします。
+・可能であれば、お願いしている部分以外の内容についても筆を入れていただくのは大歓迎です（編集の重複は運営部会で調整します）。
+
+お手数おかけしますが、何卒よろしくお願いいたします。
+
+運営部会長　橋本洸哉
+-->
+<h1 id="%E4%B8%80%E8%88%AC%E8%AC%9B%E6%BC%94">一般講演</h1>
+<p>一般講演には口頭発表とポスター発表があります。</p>
+<h3 id="%E5%8F%A3%E9%A0%AD%E7%99%BA%E8%A1%A8">口頭発表</h3>
+<ul>
+<li>口頭発表の講演時間は、発表12分、質疑応答3分の合計15分です。</li>
+<li>発表はオンサイトのみです。オンライン発表はできず、オンデマンドでの配信も行いません。</li>
+<li>口頭発表には、英語セッションと通常セッションがあります。通常セッションにおいて英語で発表することも可能です。</li>
+<li>学生会員または学位取得後５年以内の一般会員であれば、英語セッションで口頭発表を行う場合には<a href="#%E8%8B%B1%E8%AA%9E%E5%8F%A3%E9%A0%AD%E7%99%BA%E8%A1%A8%E8%B3%9E">英語口頭発表賞</a>の審査対象となることができます。</li>
+</ul>
+<h3 id="%E3%83%9D%E3%82%B9%E3%82%BF%E3%83%BC%E7%99%BA%E8%A1%A8">ポスター発表</h3>
+<ul>
+<li>全てのポスターはオンライン（ONLINE CONF）で掲載していただくとともに、希望者はオンサイトでのポスター掲示が可能です。<!-- ※今回はオンサイト発表数の上限なし--></li>
+<li>オンサイトポスター発表を対象としたコアタイムを大会期間中に設けます。<!-- #大会基本情報 のページと重複するが良い？　--></li>
+<li>オンラインポスター発表を対象としたコアタイムは設けませんが、大会開始前に全てのオンラインポスターを閲覧期間（3月12～14日の3日間を予定）を設けます。</li>
+<li>過去の生態学会大会でポスター賞を受賞していない博士号未取得の学生会員であれば、<a href="#%E3%83%9D%E3%82%B9%E3%82%BF%E3%83%BC%E8%B3%9E">ポスター賞</a>に応募できます。<!-- #ポスター発表賞→ポスター賞に変更 --><!-- - ポスター発表の公募セッションを選択した場合かつオンサイト発表を希望される場合、掲示場所はシンポジウム会場の近くに配置される予定です。※公募セッションのポスターの設置場所については未定 --></li>
+<li>前回大会からオンラインポスターの発表方法を変更しておりますので、詳細については<a href="#%E3%82%AA%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%B3%E3%83%9D%E3%82%B9%E3%82%BF%E3%83%BC%E3%81%AE%E7%99%BA%E8%A1%A8%E6%96%B9%E6%B3%95">オンラインポスターの発表方法</a>をご確認ください。</li>
+</ul>
+<h2 id="%E8%AC%9B%E6%BC%94%E7%94%B3%E8%BE%BC%E3%81%BF">講演申込み</h2>
+<h3 id="%E7%94%B3%E8%BE%BC%E3%81%BF%E3%81%AB%E3%81%82%E3%81%9F%E3%81%A3%E3%81%A6">申込みにあたって</h3>
+<ul>
+<li>申込時に希望する発表形式（口頭発表かポスター発表か）をご入力いただきますが、発表件数の多寡によってはご希望に沿えない場合もあります。</li>
+<li>一般講演の講演者（主たる説明者、以下同様）は、日本生態学会の会員に限ります。ただし、共同研究者として名前を載せることは非会員でも可能です（<a href="regist_information_ja/#%E4%BC%9A%E5%93%A1%E7%A8%AE%E5%88%A5%E3%81%94%E3%81%A8%E3%81%AE%E8%AC%9B%E6%BC%94%E8%B3%87%E6%A0%BC">会員種別ごとの講演資格</a>参照）。
+<ul>
+<li>講演を希望する非会員の方は、<a href="regist_information_ja#%E7%94%9F%E6%85%8B%E5%AD%A6%E4%BC%9A%E3%81%B8%E3%81%AE%E6%96%B0%E8%A6%8F%E5%85%A5%E4%BC%9A%E6%89%8B%E7%B6%9A%E3%81%8D">生態学会への新規入会手続き</a>を参考に、2024年10月31日（木）までに学会への入会手続きをすませてください。</li>
+</ul>
+</li>
+<li>講演の<a href="regist_information_ja/#%E9%87%8D%E8%A4%87%E5%88%B6%E9%99%90">重複制限</a>にご注意ください。一般講演の講演者は、他の一般講演の講演者やシンポジウムの企画者・講演者になることはできません。
+<ul>
+<li>自由集会との重複は可能です。</li>
+<li>シンポジウムにおける要旨登録を伴わない趣旨説明やコメント、意見表明などは、講演には数えないため、重複制限の対象とはなりません。</li>
+</ul>
+</li>
+<li>海外からの招待者や留学生など、日本語を解さない参加者との交流のためにも、日本語の発表の場合でも一部英語併記を推奨します。</li>
+</ul>
+<h3 id="%E7%94%B3%E8%BE%BC%E3%81%BF%E6%96%B9%E6%B3%95">申込み方法</h3>
+<p>以下のページから各種講演申込みが可能です。</p>
+<p><strong><a href="%E5%90%84%E7%A8%AE%E8%AC%9B%E6%BC%94URL">【各種講演申込みサイトへ】</a></strong></p>
+<ul>
+<li>講演者は、2024年10月31日までに、講演申込サイトからから講演申込を行なってください。</li>
+<li>講演申込みには以下の情報が必要となります。なお、これらの情報は締切後は変更できませんのでご注意ください。
+<ul>
+<li>講演タイトル（日本語・英語両方、日本語全角40文字/英語半角150文字以内）</li>
+<li>講演者・共同発表者の氏名・所属（日本語・英語両方）</li>
+</ul>
+</li>
+<li>講演申込時に希望分野を選んでいただきます（下表参照）。一般講演申込のフォームに選択可能な分野一覧が示されますので、第３希望までお選びください。なお、応募数によっては、分野が統廃合される場合もあります。</li>
+<li>2025年2月21日までに大会申込サイトから講演要旨（日本語なら800文字以内、英語なら400単語以内）を登録してください。</li>
+<li><a href="regist_infromation_ja#%E3%81%9D%E3%81%AE%E4%BB%96%E6%B3%A8%E6%84%8F%E7%82%B9">その他の注意点</a>もご確認の上、申込みを行ってください。</li>
+</ul>
+<table border rules="none">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr>
+  <td colspan=2>テストセッション名 (公募セッション)</td>
+  <td>行動</td>
+  <td>植物生理生態</td>
+</tr>
+<tr>
+  <td>生物多様性</td>
+  <td>進化</td>
+  <td>動物個体群</td>
+  <td>植物個体群</td>
+</tr>
+<tr>
+  <td>外来種</td>
+  <td>数理</td>
+  <td>動物生活史</td>
+  <td>植物生活史</td>
+</tr>
+<tr>
+  <td>保全</td>
+  <td>景観</td>
+  <td>動物繁殖</td>
+  <td>植物繁殖</td>
+</tr>
+<tr>
+  <td>生態系管理</td>
+  <td>遷移・更新</td>
+  <td>動物群集</td>
+  <td>群落</td>
+</tr>
+<tr>
+  <td>生態学教育・普及</td>
+  <td>物質循環</td>
+  <td>動物と植物の相互関係</td>
+  <td>菌類・微生物</td>
+</tr>
+</tbody>
+</table>
+<h2 id="%E8%8B%B1%E8%AA%9E%E5%8F%A3%E9%A0%AD%E7%99%BA%E8%A1%A8%E8%B3%9E">英語口頭発表賞</h2>
+<p>英語口頭発表賞（EPA）は、大会における英語による研究発表を振興し、留学生や国外からの参加者との議論の場をより多く作ることを目的として設けられています。同時に、特にキャリア初期研究者のコミュニケーション能力と国際的情報発信力を高める機会を増やしたいと考えています。</p>
+<p>この賞は英語の流暢さなどの言語能力を競うものではありません。応募者には発表の学問的内容と発表技術や姿勢を競っていただき、審査員による採点から優れた発表と判断されたものに賞を授与します。</p>
+<h3 id="%E5%BF%9C%E5%8B%9F%E8%B3%87%E6%A0%BC">応募資格</h3>
+<ul>
+<li>学生 （学部、修士課程、博士課程）または 2025年3月までで学位取得後５年以内の日本生態学会員とします（ただし、育児／介護休暇はこの５年間に含めません）。</li>
+<li>過去にEPA最優秀賞を受賞した方はお申し込みいただけませんが、優秀賞を受賞した方はお申込みいただけます。なお、この応募資格は、次回大会のESJ72以降、変更になる可能性があります。</li>
+</ul>
+<h3 id="%E5%AF%A9%E6%9F%BB%E5%9F%BA%E6%BA%96">審査基準</h3>
+<ul>
+<li>審査員による点数評価により審査を行ないます。講演の申込みと賞への応募は、大会申込サイトから行なっていただきます。</li>
+</ul>
+<h2 id="%E3%83%9D%E3%82%B9%E3%82%BF%E3%83%BC%E8%B3%9E">ポスター賞</h2>
+<p>キャリア初期研究者の研究活動を奨励するために、優秀なポスター発表を行ったものに対してポスター賞を贈ります。審査員確保の観点から、ポスター賞応募数の上限を500件に設定します。<!-- ポスター賞応募数の上限500件でいいか？-->
+賞審査を行わない一般ポスター発表については、申込数の上限設定はありません。<!-- #一般ポスターという言葉が分かりにくいかと思ったので補足 --></p>
+<h3 id="%E5%BF%9C%E5%8B%9F%E8%B3%87%E6%A0%BC">応募資格</h3>
+<ul>
+<li>一般講演の申込締切期限の時点で博士号未取得の学生会員とします。</li>
+<li>ただし、過去の日本生態学会大会においてポスター「最優秀賞」または「優秀賞」を受賞した者は、上記の条件を満たしていても応募できません。過去の日本生態学会大会にはEAFESと合同で運営された大会も含まれます。</li>
+<li>また、公募セッションの「TODO：公募セッションテーマ」を発表分野として希望した発表者も、ポスター賞に応募することはできません。<!-- #公募セッションのポスター発表をするメリットがほとんどないのが気になる… --><!-- 審査を効率よく行うため、ポスター賞への応募者は、発表コンテンツとしてポスター本体のほかにグラフィカルアブストラクトと説明動画を掲示してください。ただし、グラフィカルアブストラクトと説明動画の内容は審査に影響しません。#今大会の変更により削除し次の項目を追加 --></li>
+<li>今大会では、応募者の負担軽減のため、グラフィカルアブストラクトと説明動画の掲示はポスター賞への応募の要件とはしません。グラフィカルアブストラクトと説明動画の内容は基本的に審査の対象外ですが、審査員が研究内容を理解するために、グラフィカルアブストラクトや説明動画を参考にする可能性はあります。</li>
+</ul>
+<h3 id="%E5%AF%A9%E6%9F%BB%E5%9F%BA%E6%BA%96">審査基準</h3>
+<p>選考上重視されるポイントは、ポスターの情報伝達能力と研究の質の2点です。ポスター賞応募者は、これらの点に十分考慮してポスター作成をお願いします。</p>
+<ul>
+<li>ポスターの情報伝達能力については、研究内容がわかりやすく表示されているかが審査されます。
+例えば、（1）良いタイトル、（2）わかりやすい要旨、（3）視線を引きつける工夫、（4）短時間でおおまかな内容が理解できる<!--今大会では意見交流場がないので「伝えられる」から変更-->工夫などが求められます。そのためには、字・図表が見やすいこと、情報過多にならないこと、説明なしでも要点が理解できることなどが重要です。公平性を期すために、演題タイトルの受付登録後の変更はお控え下さい。</li>
+<li>研究の質としては、（1）新規性・独創性、（2）データの質・量、（3）解析方法の妥当性、（4）議論・結論の妥当性が主な審査項目となります。</li>
+</ul>
+<h3 id="%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A0%85">注意事項</h3>
+<ul>
+<li>本大会では審査員確保の観点から、ポスター賞の申込数について、500件という上限を設定します。申込は先着順とし、上限に達した場合は一般ポスターまたは口頭発表での発表となります。</li>
+<li>ポスター賞の審査は、公平を期すため、オンラインポスターを対象に行います。審査は大会開始前に行いますので、指定された期日（3月11日23:59を予定）までに必ずONLINE CONF上にポスターをアップロードしてください。</li>
+<li>
+<!-- また、このオンラインポスター本体は、「A4横向き×４枚程度」の形式で作成されたものを想定しています。#今大会の変更により削除 -->「ポスター発表は限られたスペースに研究内容を俯瞰的にまとめるものである」という考えから、ポスターのフォーマットはA0サイズ1枚とします。向きは縦長でも横長でも構いません。オンサイトポスター発表と合わせるために縦向きとする、パソコンの画面に合わせて横向きする、など適宜ご判断ください。
+</li>
+<li>今回のオンラインポスター発表では、グラフィカルアブストラクト、ポスター本体、補足資料（PDF）、説明動画をアップロードすることが可能となっていますが、このうち審査の対象となるのはポスター本体だけとなります（オンサイトにも掲示する場合でも、審査対象はオンラインポスターのみになります）。<!-- #上の3点については発表の諸注意のページにも類似の記述をするが、ここにもあった方が親切かなと思い加えました --></li>
+<li>今大会ではオンラインポスター発表のコアタイムおよび意見交流場はありませんので、分かりやすいポスターの作成を心がけてください。ポスターを見ただけでは評価しにくい項目については、審査員がテキストチャットを用いて発表者に質問し、その応答をもって評価することがあります。<!-- #今大会の変更点を反映 --></li>
+<li>
+<!-- 日本語を理解しない研究者に対して配慮がなされているかも考慮します。#次の文と矛盾するように読めたので削除 -->審査の際には使用言語に関わらずポスターの内容のみを評価しますが、審査の結果が同票だったポスターについては英語による理解が可能なポスターの順位を繰り上げます。英語による理解が可能なポスターとは、タイトルやイントロおよび結論に英語が併記されている場合、英語を読むだけで研究の概要を理解できる場合、ポスター内の言語を英語に変更したポスター（英語版ポスター）が別ページに用意されている場合等が該当します。
+</li>
+</ul>
+<!-- - 使用言語を「英語」、もしくは「バイリンガル」とした場合、ポスターの中に英語での説明を含めるか、ポスター内の言語を英語に変更したポスター（英語版ポスター）も用意するようにして下さい。#ポスター賞の項目からは削除してよい？ -->
+<h2 id="%E3%82%AA%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%B3%E3%83%9D%E3%82%B9%E3%82%BF%E3%83%BC%E7%99%BA%E8%A1%A8%E3%81%AB%E3%81%8B%E3%81%8B%E3%82%8F%E3%82%8B%E8%B3%9E%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">オンラインポスター発表にかかわる賞について</h2>
+<ul>
+<li>本大会のポスター発表では、従来どおりのポスター賞に加えて、大会参加者全員で選ぶ「いいね！」賞とベストディスカッサー賞が設けられます。</li>
+<li>日本生態学会ではなくESJ72が独自に授与するため、学会公式の賞ではありません。</li>
+<li>これらの賞の受賞者は、決定次第、ONLINE CONFおよび大会ウェブサイトで告知します。</li>
+</ul>
+<!-- #これらの賞の期限はいつまでにする？大会開始前までにするか、大会中まで含めるか… -->
+<h3 id="%E3%81%84%E3%81%84%E3%81%AD%E8%B3%9E">「いいね！」賞</h3>
+<ul>
+<li>コメント機能を活用した参加者間のコミュニケーションを活性化することを意図して、今回、通常のポスター賞とは別に「いいね！」賞を設けます。「いいね！」賞は全てのポスターが選考の対象です。</li>
+<li>選考は、ポスター発表に対する投票数および「いいね」の数に基づいて行われます。<!--#いいね！ボタンを押された数ではなく評価ボタンの数なので、誤解を与えるのを避けるためカッコ内を削除--><!-- 有効票として計上されるのは、そのポスター発表に対してコメントを残した方が投じた票に限られます。#要確認-->投票の権利は、高校生を含むすべての大会参加者にあります。</li>
+<li>この賞の選考にあたっては、多くの閲覧者を得られたポスターが有利になります。そのため、閲覧システムの性質上、番号の若いポスターほど有利になる可能性があります。</li>
+</ul>
+<h3 id="%E3%83%99%E3%82%B9%E3%83%88%E3%83%87%E3%82%A3%E3%82%B9%E3%82%AB%E3%83%83%E3%82%B5%E3%83%BC%E8%B3%9E">ベストディスカッサー賞</h3>
+<ul>
+<li>良質のコメントを書き込むことによって、高校生ポスターを含むすべてのポスター発表の盛り上げに貢献した大会参加者個人に対し、賞を贈ります。</li>
+<li>コメントについた「いいね！」の数を大会参加者ごとに集計し、選考します。コメントに「いいね！」をつける権利は、高校生を含むすべての大会参加者にあります。</li>
+<li>この賞は、コメント機能を活用した参加者間のコミュニケーションを活性化することを意図して特別に設けられたものです。</li>
+</ul>
+<!-- このセクションは別ページ「発表に関する諸注意」に掲載される予定 -->
+<h2 id="%E3%83%9D%E3%82%B9%E3%82%BF%E3%83%BC%E7%99%BA%E8%A1%A8%E3%81%AE%E6%96%B9%E6%B3%95">ポスター発表の方法</h2>
+<h3 id="%E3%82%AA%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%B3%E3%83%9D%E3%82%B9%E3%82%BF%E3%83%BC%E3%81%AE%E7%99%BA%E8%A1%A8%E6%96%B9%E6%B3%95">オンラインポスターの発表方法</h3>
+<ul>
+<li>大会期間中にオンサイト参加者がオンラインポスターを閲覧することが難しいため、大会の前に全参加者がオンラインポスターを閲覧期間（3月12～14日の3日間を予定）を設けます。そのため、ポスター発表者は全員、指定された期日（3月11日の23:59を予定）までにONLINE CONF上にポスターのアップロードを済ませてください。なお、一度アップロードしたポスターの修正・差し替えは可能です。1月31日以降にポスターのアップロードが可能になる予定です。 <!-- #アグリスマイルに確認済み。しかし、要旨の締め切りより先にアップできるのも変かもしれない… --></li>
+<li>同様の理由で、今大会ではオンラインポスター発表のコアタイムおよび意見交流場は設けられません。オンライン上で直接説明をしたい場合には、各自でZoomなどのオンライン会議システムをご利用ください。ONLINE
+CONF上のテキストチャット機能は利用可能ですので、ぜひご活用ください。</li>
+<li>今回のオンラインポスター発表では、グラフィカルアブストラクト、ポスター本体、補足資料（PDF）、説明動画をアップロードすることが可能となっています。補足資料、グラフィカルアブストラクトおよび説明動画のアップロードは必須ではありません。</li>
+<li>「ポスター発表は限られたスペースに研究内容を俯瞰的にまとめるものである」という考えから、ポスターのフォーマットはA0サイズ1枚とします。向きは縦長でも横長でも構いません。オンサイトポスター発表と合わせるために縦向きとする、パソコンの画面に合わせて横向きする、など適宜ご判断ください。</li>
+<li>ポスター本体は、PDF形式（音声や動画の埋め込みをしない）で作成してください。ファイルサイズの上限は5MBとします。これを超えるサイズのファイルはアップロードしないようにお願いします。ファイルサイズが大きいとプラットフォーム上での表示に時間がかかるため、ファイルサイズで1MB以下、ページあたり500KB以下を推奨します。<!-- #アグリスマイルに確認済み --></li>
+<li>本学会では国際交流に力を入れて取り組んでいます。このため、日本語を理解できない聴衆に対しての配慮を歓迎します。具体的には、ポスターの中で要点を日英併記にすることや、あるいはポスター内の言語を英語に変更したポスター（英語版ポスター）を別途用意することをご検討ください。使用言語を<!--「英語」、もしくは #「英語」の場合はすべて英語では？-->「バイリンガル」とした場合、ポスターの中に英語での説明を含めるか、ポスター内の言語を英語に変更したポスター（英語版ポスター）も用意するようにして下さい。英語版ポスターを別途用意していただく際には、「A0サイズ1枚」が２セット（日本語版・英語版）という構成が推奨されます。使用言語を「英語」とした場合は、英語を用いてポスターを作成するようにしてください。</li>
+<li>ポスター本体の内容を補足し、聴衆のより深い理解を助けるための補足資料（追加の図表やデータ、文書など）を表示することも可能です。これらの資料は、上述のポスターと同一のPDFファイル内でポスターの後に続くように別ページで格納し、１つのPDFファイルとした上でアップロードしてください（英語版ポスターやこれらの補足資料を追加した場合でもファイルサイズの上限は5MBです）。<!-- #コメントのファイル添付機能にアップするやり方もあるようだが、周知するか、周知の方法についは要検討 --></li>
+<li>グラフィカルアブストラクトは、ポスターの一覧表示おけるサムネイル画像およびプラットフォーム上で表示される一枚目のポスター画像<!--および交流会・懇親会会場となるSpatialChatの背景コンテンツ #spatial chatに表示されるか確認-->として使用されます。縦横 1200 pixel x 1200 pixel のJPG画像として作成してください。必ずしも研究内容を要約した画像である必要はなく、たとえば研究対象生物の写真などでも構いません。アイキャッチになることが重要です。グラフィカルアブストラクトをアップロードしない場合は、ポスター一覧のページにはポスター本体の1ページ目が表示されます。</li>
+</ul>
+<!-- #以下は9月の時点でHPにアップしなくてよい 
+- グラフィカルアブストラクトは、ポスターの一覧表示おけるサムネイル画像、プラットフォーム上で表示される一枚目のポスター画像、および交流会・懇親会会場となるSpatialChatの背景コンテンツとして使用されます。縦横 1200 pixel x 1200 pixel のJPG画像として作成してください。必ずしも研究内容を要約した画像である必要はなく、たとえば研究対象生物の写真などでも構いません。アイキャッチになることが重要です。
+- SpatialChatに貼られたグラフィカルアブストラクトは、ID管理の都合により、大会に参加申込みをしていない方にも閲覧される可能性があります。グラフィカルアブストラクトに含まれる情報には、通常の発表要旨と同程度の機密性をお心がけください。#今回もSpatialChatにグラフィカルアブストラクトは貼られる？ 
+- ポスター内容を説明する動画や発表内容に関連する動画をアップロードすることができます（２ファイルまで／MP4形式のみ／500 MB以下／５分以内）。プラットフォーム上では、この動画はポスターとは別に表示されます。聴衆はポスターを表示したまま動画を視聴したり、動画ファイルに含まれる音声だけを聞きながらポスターを眺めたりすることができます。
+- アップロードされたポスターや説明動画は、ダウンロードやテキストのコピーができない設定になります。
+ポスターは会期後１ヶ月間程度プラットフォーム上で閲覧できる状態が続き、この間はテキストチャットを用いたディスカッションも引き続き可能にする予定です。会期後も、交流の場としてご活用ください。
+-->
+<h3 id="%E3%82%AA%E3%83%B3%E3%82%B5%E3%82%A4%E3%83%88%E3%83%9D%E3%82%B9%E3%82%BF%E3%83%BC%E3%81%AE%E7%99%BA%E8%A1%A8%E6%96%B9%E6%B3%95">オンサイトポスターの発表方法</h3>
+<ul>
+<li>オンサイトポスターの掲示に使用されるボードのサイズは縦210cm×横90cmで、A0縦型のポスターを掲示可能です。演者はこのスペースを自由に利用可能です。ただし、サイズをオーバーして隣のボードに入り込むなど、他の発表者の邪魔にならない範囲での掲示をお願いします。</li>
+<li>各ポスター発表には大会期間中にコアタイムが設定されますので、コアタイム中はポスターの前で参加者に対して説明をしてください。</li>
+</ul>
+<!-- #以下は9月の時点でHPにアップしなくてよい 
+- ポスターを貼るための画鋲は持参してください。例年、会場周辺の店舗では品薄になりますので、ご注意ください。
+- 本大会は、日本生態学会では久々のオンサイトでのポスター発表となります。当日は混雑も予想されますので、感染症対策等、ご自身の責任で適切に行っていただきますようお願いいたします。
+-->
+<!-- ここまで、別ページ「発表に関する諸注意」に移動 -->
+
+</body>
+</html>
